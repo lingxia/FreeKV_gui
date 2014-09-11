@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>freekvUi</class>
+ <widget class="QWidget" name="freekvUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FreeKV Configuration</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../pic/dp.png</normaloff>../pic/dp.png</iconset>
+  </property>
+  <property name="statusTip">
+   <string>Configuration for FreeKV_demo</string>
+  </property>
+  <widget class="QGroupBox" name="demoGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>371</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>FreeKV_demo Configuration</string>
+   </property>
+   <widget class="QTabWidget" name="freekvTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>351</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Select the type to configurate</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="basicTab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../pic/config_icon.png</normaloff>../pic/config_icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Basic</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>App name to build/run</string>
+      </property>
+      <property name="text">
+       <string>App Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="platformLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>54</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Platform to build/run</string>
+      </property>
+      <property name="text">
+       <string>Platform</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="platformComboBox">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="appComboBox">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="buildTab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../pic/build_icon.png</normaloff>../pic/build_icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Build</string>
+     </attribute>
+     <widget class="QLabel" name="testDirLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Test code dirctory e.g. C:/mcu-sdk</string>
+      </property>
+      <property name="text">
+       <string>Test Dir</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="testLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="projectLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Generate project or not</string>
+      </property>
+      <property name="text">
+       <string>Generate Project</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="projectComboBox">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>50</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>yes</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>no</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="ideLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>IDE and its dirctory with rigth version</string>
+      </property>
+      <property name="text">
+       <string>IDE</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ideComboBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ideLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>80</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="targetComboBox">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="targetLabel">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Build target</string>
+      </property>
+      <property name="text">
+       <string>Target</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="libComboBox">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>yes</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>no</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="libLabel">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Build lib or not </string>
+      </property>
+      <property name="text">
+       <string>Build Lib</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="versionLabel">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>*version</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ideVersionComboBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="runTab">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../pic/run_icon.png</normaloff>../pic/run_icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Run</string>
+     </attribute>
+     <widget class="QLabel" name="debuggerLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Debugger name and dirctory</string>
+      </property>
+      <property name="text">
+       <string>Debugger</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="debuggerLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="debuggerComboBox">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>10</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="serialLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Serial port</string>
+      </property>
+      <property name="text">
+       <string>Serial Port</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="serialLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="debugPortLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="debugPortLabel">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Debug port(Jlink SN)</string>
+      </property>
+      <property name="text">
+       <string>Debug Port</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="binaryLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Binary dirctory</string>
+      </property>
+      <property name="text">
+       <string>Binary</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="binaryLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="typeGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Configuration Type</string>
+   </property>
+   <widget class="QCheckBox" name="buildCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Configuration for build</string>
+    </property>
+    <property name="text">
+     <string>Build</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="runCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Configuration for run</string>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="startButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string>Start build/run</string>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
